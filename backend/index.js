@@ -12,8 +12,10 @@ const Settings = require('./models/Settings');
 const app = express();
 
 // Middleware
-app.use(cors());
+
 app.use(express.json());
+
+app.use(cors({ origin: 'https://negotiation-cal.wowosapps.com' }));
 
 // Database Connection
 mongoose.connect(process.env.MONGO_URI)
