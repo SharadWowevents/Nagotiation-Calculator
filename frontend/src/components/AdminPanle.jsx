@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { isApproved, normalizedEmail } from '../assets/utils';
 
 // Replace with your actual backend URL or use an environment variable (e.g., import.meta.env.VITE_API_URL)
-const API_URL = 'http://localhost:5000/api/settings'; 
+const API_URL = '/api/settings'; 
 
 export default function AdminPanel({ settings, updateSettings }) {
   const [newEmail, setNewEmail] = useState('');

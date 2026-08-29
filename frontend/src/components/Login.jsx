@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { normalizedEmail } from '../assets/utils';
 
 // Replace with your actual backend URL or use an environment variable
-const API_URL = 'http://localhost:5000/api/auth/login';
+const API_URL = '/api/auth/login';
 
 export default function LoginForm({ onLogin }) {
   const [name, setName] = useState('');

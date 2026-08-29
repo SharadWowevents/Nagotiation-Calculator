@@ -7,8 +7,8 @@ import EntryForm from './components/EntryForm';
 import SavedEntries from './components/SavedEntries';
 
 // Replace with your actual backend URLs
-const API_SETTINGS_URL = 'http://localhost:5000/api/settings';
-const API_ENTRIES_URL = 'http://localhost:5000/api/entries';
+const API_SETTINGS_URL = '/api/settings';
+const API_ENTRIES_URL = '/api/entries';
 
 export default function App() {
   // Application state (starts empty, gets populated from DB)

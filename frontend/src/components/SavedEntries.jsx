@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { fmtMoney, fmtPct, priceForMargin } from '../assets/utils';
 
 // Replace with your actual backend URL or use an environment variable (e.g., import.meta.env.VITE_API_URL)
-const API_URL = 'http://localhost:5000/api/entries';
+const API_URL = '/api/entries';
 
 export default function SavedEntries({ entries, onEdit, onDelete }) {
   const [confirmDeleteId, setConfirmDeleteId] = useState(null);
