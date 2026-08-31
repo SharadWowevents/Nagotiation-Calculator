@@ -14,8 +14,7 @@ const app = express();
 // Middleware
 
 app.use(express.json());
-
-app.use(cors({ origin: 'https://negotiation-cal.wowosapps.com' }));
+app.use(cors());
 
 // Database Connection
 mongoose.connect(process.env.MONGO_URI)
